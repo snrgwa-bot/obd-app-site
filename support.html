@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · OBD App</title>
+  <meta name="description" content="Help with OBD App: adapters, connecting, codes, subscriptions and your data.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.png" alt=""><span>OBD App</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="support.html" class="on">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>Support</h1>
+    <p class="updated">We usually reply within a day or two.</p>
+
+    <div class="box">
+      <strong>Email us:</strong> <a href="mailto:essentialdevteam@gmail.com?subject=OBD%20App%20support">essentialdevteam@gmail.com</a><br>
+      Tell us your car (year, make, model), your adapter, and what happened. In the app, Settings ▸ Adapter Log ▸ Share
+      sends us exactly what the car answered, which helps a lot.
+    </div>
+
+    <h2 id="adapters">Which adapter do I need?</h2>
+    <p>A <strong>Bluetooth LE (4.0 or newer)</strong> OBD-II adapter. iPhone can't use the older "Bluetooth 3.0" adapters
+      sold for Android, and Wi-Fi adapters take over your phone's internet.</p>
+    <table>
+      <tr><th>Adapter</th><th>Notes</th></tr>
+      <tr><td>Vgate iCar Pro 2S (Bluetooth 5.2)</td><td>Our main test adapter. Good value.</td></tr>
+      <tr><td>Veepeak OBDCheck BLE</td><td>Reliable, widely available.</td></tr>
+      <tr><td>OBDLink CX</td><td>Premium and fast.</td></tr>
+    </table>
+    <p class="note">As an Amazon Associate we earn from qualifying purchases.</p>
+
+    <h2>Getting connected</h2>
+    <ol>
+      <li>Find the 16-pin port under the dashboard on the driver's side, near the steering column.</li>
+      <li>Plug the adapter in firmly. Turn the ignition on (the engine can stay off).</li>
+      <li>Open OBD App and tap <em>Connect Adapter</em>. Don't pair it in iPhone's Bluetooth settings: the app connects by itself.</li>
+    </ol>
+
+    <h2>Common questions</h2>
+    <details><summary>The app can't find my adapter</summary>
+      <ul>
+        <li>Make sure it's a Bluetooth LE adapter and its light is on.</li>
+        <li>Check Bluetooth is on and allowed for OBD App (Settings ▸ OBD App ▸ Bluetooth).</li>
+        <li>If you paired it in iPhone's Bluetooth settings, tap Forget This Device there, then try again in the app.</li>
+        <li>Unplug the adapter for 10 seconds and plug it back in.</li>
+      </ul>
+    </details>
+    <details><summary>The adapter connects but the car doesn't answer</summary>
+      <p>Turn the ignition fully on (dashboard lights on). Some cars need the engine running. Cars sold in the US from 1996,
+        EU petrol cars from 2001 and EU diesels from 2004 support OBD-II. Send us the Adapter Log if it still fails.</p>
+    </details>
+    <details><summary>My check-engine light is on but the app shows no codes</summary>
+      <p>Run a new scan with the ignition on. Some cars report the light from a different module: Full Scan (Pro) reads every
+        module. Permanent codes are listed separately in the Codes tab.</p>
+    </details>
+    <details><summary>Will it work with my car?</summary>
+      <p>Basic diagnostics work with any OBD-II car. Car Sensors adds extra readings for about 880 models worldwide.
+        Full Scan works on CAN cars (most cars from 2008). Heavy trucks with the 9-pin J1939 connector aren't supported yet.</p>
+    </details>
+    <details><summary>Can the app reset my oil or service light?</summary>
+      <p>The Reset Guides in the Car tab show the dashboard steps for your brand. Most cars reset the reminder from the
+        instrument cluster, with no tool needed.</p>
+    </details>
+    <details><summary>Is it safe to clear codes?</summary>
+      <p>Yes, after the problem is fixed. Clearing doesn't repair anything: if the fault is still there, the light comes back.
+        It also resets emissions readiness, so drive for a few days before a smog test.</p>
+    </details>
+    <details><summary>Restore my purchase on a new phone</summary>
+      <p>Settings ▸ Pro ▸ Restore Purchases, signed in with the same Apple Account you bought Pro with.</p>
+    </details>
+    <details><summary>Cancel a subscription or ask for a refund</summary>
+      <p>Subscriptions are managed by Apple: Settings ▸ [your name] ▸ Subscriptions. For refunds, visit
+        <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    </details>
+    <details><summary>Do you collect my data?</summary>
+      <p>Your scans stay on your phone. With Help Improve Car Support on, the app sends anonymous facts about which sensors
+        and modules your car model answers on, never your VIN, name or location. Turn it off in Settings ▸ Privacy.
+        To delete what we hold, email us the installation ID shown there. See the <a href="privacy.html">privacy policy</a>.</p>
+    </details>
+
+    <h2>Request a feature</h2>
+    <p>Missing your car or a reading you need? <a href="mailto:essentialdevteam@gmail.com?subject=OBD%20App%20feature%20request">Tell us</a>.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+      <div>© 2026 Essential Dev Team</div>
+    </div>
+  </footer>
+</body>
+</html>
