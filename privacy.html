@@ -23,13 +23,14 @@
 
   <main class="wrap doc">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 25, 2026</p>
+    <p class="updated">Last updated: October 28, 2026</p>
 
     <div class="box">
       <strong>In short:</strong> your scans, history and car details stay on your iPhone. If you leave
       <em>Help Improve Car Support</em> on, the app sends anonymous facts about which sensors and modules your
-      car model answers on, never your VIN, name, email or location. You can turn it off any time in
-      Settings ▸ Privacy. There are no ads, no third-party analytics and no tracking.
+      car model answers on, never your VIN, name, email or location. With <em>Share Usage Data</em> on, the app
+      also sends anonymous usage statistics (which screens and features are used, crashes) to our own server.
+      Both switches are in Settings and can be turned off any time. There are no ads, no third-party analytics and no tracking.
     </div>
 
     <h2>1. Who we are</h2>
@@ -46,7 +47,7 @@
     <h2>3. Help Improve Car Support (anonymous car data)</h2>
     <p>This setting is <strong>on by default</strong>. After a scan, the app sends:</p>
     <ul>
-      <li>the car's make, model, model year and engine description (decoded from the VIN on your device, see section 4);</li>
+      <li>the car's make, model, model year and engine description (decoded from the VIN on your device, see section 5);</li>
       <li>the OBD protocol the car uses and the vehicle profile the app matched;</li>
       <li>which car-specific sensors answered and which didn't;</li>
       <li>which diagnostic modules answered in a Full Scan, with the names they report (for example "Airbag (SRS)");</li>
@@ -66,21 +67,54 @@
       (<a href="https://obdb.community">obdb.community</a>). We contribute back <em>aggregated</em> findings only, such as
       "this sensor answered on 12 cars of this model year". These summaries are published openly under the CC BY-SA 4.0
       licence and never include installation IDs or any per-car record.</p>
-    <p><strong>Turn it off:</strong> Settings ▸ Privacy ▸ Help Improve Car Support. Nothing is collected or sent while it's off.
-      <strong>Delete your data:</strong> email us the installation ID shown under that setting and we'll delete every report from it.</p>
+    <p><strong>Turn it off:</strong> Settings ▸ Car Support ▸ Help Improve Car Support. Nothing is collected or sent while it's off.
+      <strong>Delete your data:</strong> email us the installation ID shown in Settings ▸ Privacy and we'll delete every report from it.</p>
 
-    <h2>4. Services the app contacts</h2>
+    <h2 id="usage">4. Anonymous usage statistics</h2>
+    <p>To see which features help people and to find crashes, the app sends anonymous usage statistics to our own server
+      (first-party, no third-party analytics service). <strong>Share Usage Data is on by default</strong> and you can turn it off
+      any time. What is sent:</p>
+    <ul>
+      <li>device model, iOS version and app version;</li>
+      <li>language, region and time zone;</li>
+      <li>accessibility settings in use (for example larger text or VoiceOver), so we can make the app work better with them;</li>
+      <li>sessions (when the app is opened and closed) and the last screen you were on;</li>
+      <li>the app's own events, as counts and categories only: a scan finished (how many codes, how serious, check-engine light on or off),
+        an adapter connected (Bluetooth or the demo car), Live opened, a battery test result (good, weak or bad), a Full Scan finished
+        (how many modules and codes), a code explanation opened (its severity), codes cleared, a recording or trip saved, a gauge
+        alarm went off (which gauge), the gauge theme changed and a report shared;</li>
+      <li>paywall views and which plan was tapped;</li>
+      <li>purchase, trial, renewal-status, refund and restore events (which plan and when, never the price);</li>
+      <li>review-prompt requests;</li>
+      <li>crash and performance reports from Apple's MetricKit.</li>
+    </ul>
+    <div class="box never">
+      <strong>Never sent:</strong> your name, email, phone number, address, location, VIN, trouble codes, car make or model,
+      the adapter's name, the advertising identifier (IDFA) or identifier for vendors (IDFV), prices, receipts or transaction IDs,
+      or anything you type or create. Your IP address is not stored or used. The demo (simulated) car sends no usage events
+      except that it was connected.
+    </div>
+    <p><strong>Installation ID:</strong> a random ID created by the app, used only to group statistics from one install. It isn't
+      linked to you, your Apple ID or your car, and it's deleted with the app. The same ID is used for Help Improve Car Support.</p>
+    <p><strong>Why:</strong> to improve the app and fix crashes. <strong>Legal basis:</strong> our legitimate interest, with a simple
+      opt-out. <strong>Where:</strong> our backend provider, Supabase (<a href="https://supabase.com/privacy">privacy policy</a>).
+      <strong>How long:</strong> 13 months (crash and performance reports 6 months), then deleted.</p>
+    <p><strong>Turn it off:</strong> Settings ▸ Privacy ▸ Share Usage Data. Collection stops at once and anything not yet sent is
+      deleted from your device. <strong>Delete your data:</strong> email us the installation ID shown in Settings ▸ Privacy and
+      we'll delete everything recorded under it.</p>
+
+    <h2>5. Services the app contacts</h2>
     <table>
       <tr><th>Service</th><th>What is sent</th><th>Why</th></tr>
       <tr><td>NHTSA vPIC (US Department of Transportation)</td><td>Your car's VIN</td><td>To show the year, make, model and engine. The result is cached on your device. <a href="https://www.nhtsa.gov/privacy">NHTSA privacy</a></td></tr>
       <tr><td>NHTSA Recalls API</td><td>Make, model and year (no VIN)</td><td>To list open safety recalls (Pro).</td></tr>
       <tr><td>GitHub (raw.githubusercontent.com)</td><td>The name of your car model's sensor file</td><td>Optional weekly update of car sensor data (Settings ▸ Car Data Updates). <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy</a></td></tr>
-      <tr><td>Supabase</td><td>The anonymous car data in section 3</td><td>Help Improve Car Support. <a href="https://supabase.com/privacy">Supabase privacy</a></td></tr>
+      <tr><td>Supabase</td><td>The anonymous car data in section 3 and the usage statistics in section 4</td><td>Help Improve Car Support and Share Usage Data. <a href="https://supabase.com/privacy">Supabase privacy</a></td></tr>
       <tr><td>Apple (App Store)</td><td>Handled by Apple</td><td>Purchases and subscriptions. We never see your payment details.</td></tr>
     </table>
     <p>These services may log technical details (such as an IP address) under their own policies. We don't receive them.</p>
 
-    <h2>5. Purchases and refund requests</h2>
+    <h2>6. Purchases and refund requests</h2>
     <p>Subscriptions and purchases are processed by Apple. The app checks your Pro status on your device using Apple's StoreKit.</p>
     <p><strong>Refund requests.</strong> When someone asks Apple for a refund, Apple may ask us about the purchase. By subscribing,
       you agree that we may then tell Apple that the purchase was delivered, that a free version or trial was available
@@ -88,36 +122,37 @@
       consent appeared on the subscription screen. We are also notified when a refund is requested or granted, without
       learning who you are.</p>
 
-    <h2>6. Cookies, tracking and advertising</h2>
-    <p>None. OBD App has no ads, no advertising identifiers, no third-party analytics SDKs and does not track you across apps
-      or websites. This website uses no cookies or analytics.</p>
+    <h2>7. Cookies, tracking and advertising</h2>
+    <p>OBD App has no ads, no advertising identifiers, no third-party analytics SDKs and does not track you across apps
+      or websites. Its only statistics are the first-party, anonymous usage statistics in section 4, which you can turn off.
+      This website uses no cookies or analytics.</p>
 
-    <h2>7. Automated decisions</h2>
+    <h2>8. Automated decisions</h2>
     <p>The app explains trouble codes and rates their severity using its built-in database. These are general guidance,
-      not decisions about you, and they're never sent to us.</p>
+      not decisions about you, and they're never sent to us (usage statistics only record how serious a code was, never the code).</p>
 
-    <h2>8. International transfers</h2>
+    <h2>9. International transfers</h2>
     <p>Our service providers may process data in the United States or other countries. Where required, transfers rely on
       safeguards such as the EU Standard Contractual Clauses.</p>
 
-    <h2>9. Your rights</h2>
+    <h2>10. Your rights</h2>
     <p><strong>EU, UK and similar laws (GDPR):</strong> you can ask to access, correct or delete your data, object to processing,
       restrict it, or receive a copy, and you can complain to your data protection authority. Because the data we hold is
       anonymous, we can only find it with your installation ID.</p>
     <p><strong>California (CCPA/CPRA):</strong> we don't sell or share personal information, and you can ask what we hold or ask us to delete it.</p>
 
-    <h2>10. Children</h2>
+    <h2>11. Children</h2>
     <p>OBD App isn't directed at children under 13 and we don't knowingly collect data from them.</p>
 
-    <h2>11. Security</h2>
-    <p>Data in transit is encrypted with HTTPS. Our backend accepts reports only from the app, limits how many it accepts,
+    <h2>12. Security</h2>
+    <p>Data in transit is encrypted with HTTPS. Our backend accepts reports and statistics only from the app, limits how many it accepts,
       and keeps them in storage that no app or public account can read. If a breach ever affected data we hold, we would
       notify the relevant authorities and publish a notice here as the law requires.</p>
 
-    <h2>12. Changes</h2>
+    <h2>13. Changes</h2>
     <p>We'll update this page when the app changes how it handles data, and change the date at the top.</p>
 
-    <h2>13. Contact</h2>
+    <h2>14. Contact</h2>
     <p>Questions or requests: <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a>.</p>
   </main>
 
